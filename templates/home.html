@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4262679090363387"
+     crossorigin="anonymous"></script>
+    <link rel = "icon" href ="static/272-2727045_length-icon-length-icon.png" type = "image/x-icon">
+    <title>ABC Length Convert</title>
+  </head>
+<body>
+  <link rel="stylesheet" href="{{ url_for('static',filename='home_style.css')}}" type="text/css">
+<ul>
+  <h3>ABC Length Convert</h3>
+</ul>
+<center>
+<div>
+<table>
+<form name="home" method='POST'action= "{{ url_for('result') }}"> 
+  <tr>
+<label for="source">Select from given size unit</label>
+</tr>
+<br/>
+<tr>
+<select id="from" name="from">
+  <option value="mm">Millimeter</option>
+  <option value="cm">Centimeter</option>
+  <option value="m">Meter</option>
+  <option value="km">Kilometer</option>
+  <option value="in">Inch</option>
+  <option value="ft">Foot</option>
+  <option value="yd">Yard</option>
+  <option value="mi">Mile</option>
+</select>
+</tr>
+<br/>
+<tr>
+<label for="destination">Select to convert unit</label>
+</tr>
+<br/>
+<tr>
+<select id="to" name="to">
+  <option value="mm">Millimeter</option>
+  <option value="cm">Centimeter</option>
+  <option value="m">Meter</option>
+  <option value="km">Kilometer</option>
+  <option value="in">Inch</option>
+  <option value="ft">Foot</option>
+  <option value="yd">Yard</option>
+  <option value="mi">Mile</option>
+</select>
+</tr>
+<br/>
+<tr>
+  <label for="Size" name='size'>Size</label><br>
+  <input name="value" type="text" id="Size"><br> 
+  <input type="submit" value="Submit" id='button'>
+</tr>
+<br/>
+</div>
+</center> 
+<tr>
+  <center>
+    <div id="result">
+    <p>
+      {% if result2!=o: %}
+      <p id="res">{{ result2 }}</p>
+      {% else %}
+      <p id="res"> </p>
+      {% endif %}
+    </p>
+    </div>
+    </center>    
+</tr>
+</table>
+</form>
+<div class="footer">
+  <p>This is created by TRJ Copyrights <script>document.write( new Date().getFullYear() );</script></p>
+</div>
+</body>
+</html>
