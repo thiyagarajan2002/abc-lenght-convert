@@ -24,7 +24,6 @@ itsdangerous==2.0.1
 jeepney==0.7.1
 Jinja2==3.0.3
 keyring==23.0.1
-language-selector==0.1
 launchpadlib==1.10.13
 lazr.restfulclient==0.14.2
 lazr.uri==1.0.5
@@ -74,8 +73,6 @@ systemd-python==234
 tomli==1.2.2
 tqdm==4.62.3
 twine==3.7.1
-ubuntu-advantage-tools==27.5
-ubuntu-drivers-common==0.0.0
 ufw==0.36.1
 unattended-upgrades==0.1
 urllib3==1.26.5
