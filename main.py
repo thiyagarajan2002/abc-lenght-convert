@@ -26,6 +26,6 @@ def result():
     return render_template('home.html', result2='Invalid Input')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=5000)
+    app.run(debug=True)
 
     
