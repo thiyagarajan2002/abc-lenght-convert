@@ -1,7 +1,7 @@
 from logging import exception
 from flask import Flask, render_template,url_for,request
 import convert
-import Database
+
 
 app = Flask(__name__)
 
@@ -20,7 +20,6 @@ def result():
     to_value2=ls.index(to_value1)
     result1=convert.convert(int(from_value2),int(to_value2),float(size1))
     result1=str(result1)
-    Database.write(from_value1,to_value1,size1,result1)
     return render_template('home.html', result2=result1)
   except:
     return render_template('home.html', result2='Invalid Input')
